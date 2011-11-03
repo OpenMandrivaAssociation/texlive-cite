@@ -1,3 +1,9 @@
+# revision 19955
+# category Package
+# catalog-ctan /macros/latex/contrib/cite
+# catalog-date 2010-09-12 10:54:58 +0200
+# catalog-license other-free
+# catalog-version 5.3
 Name:		texlive-cite
 Version:	5.3
 Release:	1
@@ -48,6 +54,7 @@ bundle of the author's citation-related packages.
 %doc %{_texmfdistdir}/doc/latex/cite/chapterbib.pdf
 %doc %{_texmfdistdir}/doc/latex/cite/cite.ltx
 %doc %{_texmfdistdir}/doc/latex/cite/cite.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ bundle of the author's citation-related packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
