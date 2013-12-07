@@ -6,7 +6,7 @@
 # catalog-version 5.3
 Name:		texlive-cite
 Version:	5.3
-Release:	3
+Release:	4
 Summary:	Improved citation handling in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cite
