@@ -5,8 +5,8 @@ Summary:	Improved citation handling in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cite
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.r36428.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.doc.r36428.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
