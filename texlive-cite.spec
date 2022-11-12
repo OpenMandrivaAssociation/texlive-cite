@@ -1,18 +1,12 @@
-# revision 19955
-# category Package
-# catalog-ctan /macros/latex/contrib/cite
-# catalog-date 2010-09-12 10:54:58 +0200
-# catalog-license other-free
-# catalog-version 5.3
 Name:		texlive-cite
-Version:	5.5
-Release:	2
+Version:	36428
+Release:	1
 Summary:	Improved citation handling in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cite
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.r36428.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.doc.r36428.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ backref. The package is (unsurprisingly) part of the cite
 bundle of the author's citation-related packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,25 +42,10 @@ bundle of the author's citation-related packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 5.3-2
-+ Revision: 750246
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 5.3-1
-+ Revision: 718062
-- texlive-cite
-- texlive-cite
-- texlive-cite
-- texlive-cite
-- texlive-cite
-
