@@ -3,7 +3,7 @@ Version:	36428
 Release:	2
 Summary:	Improved citation handling in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cite
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/cite
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cite.doc.r%{version}.tar.xz
